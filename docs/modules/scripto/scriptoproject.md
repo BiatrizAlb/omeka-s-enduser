@@ -16,13 +16,18 @@ You can change these settings at any time by editing the project using the Actio
 ### Configuration options
 Some of these configuration options are required to create your Scripto project; all of them can be changed later using the "Edit project" option.
 
-![Add New Project window open to the "Configuration" tab - all fields are blank](../../modules/modulesfiles/scripto-projectNewConfig.png)
+![Add New Project window open to the "Configuration" tab showing all but the last three options, all blank](../../modules/modulesfiles/scripto-projectNewConfig.png)
 
 **Title:** (required) the name of the Scripto project. This will display on public and admin sides.
 
 **Item set:** (required) select the item set with which the Scripto project should synch. This item set should contain all the items and/or media you wish to include in the project. 
 
 **Property:** (required) select from the dropdown which property should store the content created through Scripto when it is imported back into Omeka S metadata. In addition to installed [Vocabularies](https://omeka.org/s/docs/user-manual/content/vocabularies/), Scripto has its own vocabulary options of content, transcription, and translation; any of these would work for the property.
+
+**Media types:** designate which media types you want to sync. You can use this to limit which media attached to the items in the above items set are synced with Scripto; for example, you might want to only sync image files, not attached pdfs or text files.  
+
+- Select from a dropdown of mime types. To find the mimetype for a piece of media, go to that media's page on the admin and look in the right-hand drawer.  
+- You can also choose `[Media without media types]` which will bring in [media types](../../../content/items/#media) including HTML, YouTube, and oEmbed.
 
 **Description:** a description of the project. This will display on public and admin sides.
 
@@ -43,6 +48,10 @@ If you select Media, the content created in Scripto will appear in the media met
 **Browse layout:** choose the default browse layout for the project, either Grid or List.
 
 **Filter approved:** when checked, approved items will not display in the public browse view.
+
+![Add New Project window open final three configuration options](../../modules/modulesfiles/scripto-projectNewConfig2.png)
+
+The final three options allow you to change the language describing the items, media, and content of your Scripto project.
 
 **Item Type:** if you want, you can specify the type of item used in this project. What you select here will change the interface language for users. For example, if you choose "manuscript" then the browse link for the project will display as "browse manuscripts" instead of "browse items". Choose from:
 
